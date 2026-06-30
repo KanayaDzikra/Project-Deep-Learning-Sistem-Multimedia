@@ -34,8 +34,8 @@ html, body, [class*="css"] {
 }
 
 .stApp{
-    background:#141414;
-    color:#E5E5E5;
+    background:#0B0F1A;
+    color:#E2E8F0;
 }
 
 #MainMenu{visibility:hidden;}
@@ -52,30 +52,24 @@ header{visibility:hidden;}
 
 .brand-row .ico{
     font-size:18px;
-    color:#60A5FA;
 }
 
 .brand-row .name{
-    font-size:16px;
-    font-weight:700;
-    color:#F5F5F5;
-}
-
-.status-label{
-    font-size:12px;
-    color:#9CA3AF;
-    margin:0 0 6px 0;
+    font-size:14px;
+    font-weight:600;
+    color:#E2E8F0;
 }
 
 .status-pill{
     display:inline-flex;
     align-items:center;
-    font-size:13px;
-    font-weight:600;
-    color:#4ADE80;
-    background:rgba(74,222,128,.12);
-    padding:4px 14px;
-    border-radius:6px;
+    gap:6px;
+    font-size:12px;
+    color:#6EE7B7;
+    background:rgba(52,211,153,.10);
+    border:1px solid rgba(52,211,153,.25);
+    padding:4px 10px;
+    border-radius:8px;
 }
 
 /* ===== Page header (main area) ===== */
@@ -94,27 +88,22 @@ header{visibility:hidden;}
 
 /* ===== Upload card ===== */
 [data-testid="stFileUploader"]{
-    background:transparent;
-    padding:30px 14px;
+    background:#0F1525;
+    padding:14px;
     border-radius:12px;
-    border:1.5px dashed #3A3A3A;
-}
-
-[data-testid="stFileUploaderDropzone"]{
-    background:transparent;
+    border:1.5px dashed #2C3E66;
 }
 
 .upload-hint{
     font-size:12px;
-    color:#6B7280;
+    color:#5C6B8F;
     margin:6px 0 14px 2px;
-    text-align:center;
 }
 
 /* ===== Bounded card shared style ===== */
 .bounded-card{
-    background:#1C1C1C;
-    border:1px solid #2E2E2E;
+    background:#0F1525;
+    border:1px solid #1E2B4D;
     border-radius:12px;
     overflow:hidden;
     height:100%;
@@ -128,59 +117,46 @@ header{visibility:hidden;}
 }
 
 .preview-caption{
-    padding:10px 14px;
-    font-size:12px;
-    color:#9CA3AF;
-    border-top:1px solid #2E2E2E;
-    background:#1A1A1A;
-}
-
-.avatar-placeholder{
-    aspect-ratio:4/3;
-    width:100%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:40px;
-    color:#4B5563;
-    background:#161616;
+    padding:8px 12px;
+    font-size:11px;
+    color:#5C6B8F;
+    border-top:1px solid #1E2B4D;
 }
 
 /* ===== Result card ===== */
 .result-box{
-    padding:20px;
+    padding:18px;
     height:100%;
     display:flex;
     flex-direction:column;
     justify-content:center;
-    gap:8px;
+    gap:6px;
 }
 
-.result-box.danger{ border-color:#5C2A2A; background:#1F1717; }
-.result-box.calm{ border-color:#235C45; background:#171F1B; }
+.result-box.danger{ border-color:#5C2A2A; }
+.result-box.calm{ border-color:#235C45; }
 
 .result-flag{
-    font-size:14px;
-    font-weight:500;
+    font-size:13px;
     display:flex;
     align-items:center;
-    gap:8px;
+    gap:6px;
 }
 
 .result-flag.danger{ color:#F87171; }
 .result-flag.calm{ color:#34D399; }
 
 .result-number{
-    font-size:32px;
+    font-size:30px;
     font-weight:700;
-    color:#F5F5F5;
-    margin:4px 0 8px 0;
+    color:#F1F5F9;
+    margin:2px 0 6px 0;
 }
 
 .result-bar-track{
     height:6px;
     border-radius:99px;
-    background:#2E2E2E;
+    background:#1A2238;
     overflow:hidden;
 }
 
@@ -189,57 +165,43 @@ header{visibility:hidden;}
     border-radius:99px;
 }
 
-.result-bar-fill.danger{ background:#EF4444; }
-.result-bar-fill.calm{ background:#22C55E; }
-
-.detail-btn{
-    margin-top:10px;
-    display:inline-flex;
-    align-items:center;
-    gap:6px;
-    font-size:13px;
-    color:#E5E5E5;
-    background:transparent;
-    border:1px solid #3A3A3A;
-    border-radius:8px;
-    padding:8px 16px;
-    width:fit-content;
-}
+.result-bar-fill.danger{ background:#F87171; }
+.result-bar-fill.calm{ background:#34D399; }
 
 /* ===== Metric grid ===== */
 .metric-tile{
-    background:#1C1C1C;
-    border:1px solid #2E2E2E;
+    background:#0F1525;
+    border:1px solid #1E2B4D;
     border-radius:10px;
     padding:14px 16px;
 }
 
 .metric-label{
-    font-size:12px;
-    color:#9CA3AF;
+    font-size:11px;
+    color:#5C6B8F;
     margin:0 0 4px 0;
 }
 
 .metric-value{
     font-size:18px;
     font-weight:700;
-    color:#F5F5F5;
+    color:#F1F5F9;
     margin:0;
 }
 
 /* ===== Sidebar ===== */
 section[data-testid="stSidebar"]{
-    background:#1A1A1A;
-    border-right:1px solid #2A2A2A;
+    background:#0A0E1A;
+    border-right:1px solid #1A2238;
 }
 
 section[data-testid="stSidebar"] p{
-    color:#9CA3AF;
+    color:#8B9CC0;
 }
 
 /* ===== Tabs ===== */
 button[data-baseweb="tab"]{
-    color:#6B7280;
+    color:#5C6B8F;
     font-weight:500;
     font-size:13px;
 }
@@ -252,37 +214,32 @@ div[data-baseweb="tab-highlight"]{
     background-color:#3B82F6;
 }
 
-/* ===== Button (sidebar nav) ===== */
+/* ===== Button ===== */
 .stButton>button{
-    background:transparent;
-    color:#D1D5DB;
+    background:#1A2238;
+    color:#CBD5E1;
     border-radius:8px;
-    border:1px solid #3A3A3A;
-    height:42px;
-    font-size:14px;
+    border:1px solid #2C3E66;
+    height:40px;
+    font-size:13px;
     font-weight:500;
 }
 
 .stButton>button:hover{
-    border-color:#60A5FA;
-    color:#F5F5F5;
-}
-
-section[data-testid="stSidebar"] button[kind="primary"]{
-    background:#1D4ED8;
-    border-color:#1D4ED8;
-    color:white;
+    background:#202B45;
+    border-color:#3B82F6;
+    color:#F1F5F9;
 }
 
 /* ===== Footer spec strip ===== */
 .spec-strip{
-    font-size:12px;
-    color:#6B7280;
+    font-size:11px;
+    color:#475569;
     padding-top:14px;
-    border-top:1px solid #2A2A2A;
+    border-top:1px solid #1A2238;
 }
 
-hr{ border-color:#2A2A2A; }
+hr{ border-color:#1A2238; }
 
 </style>
 """, unsafe_allow_html=True)
@@ -419,25 +376,37 @@ with st.sidebar:
 
     st.markdown("""
     <div class="brand-row">
-        <span class="ico">◎</span>
+        <span class="ico">🌙</span>
         <span class="name">Stressense</span>
     </div>
-    <p class="status-label">Status</p>
-    <span class="status-pill">Aktif</span>
+    <span class="status-pill">● aktif</span>
     """, unsafe_allow_html=True)
+
+    st.markdown("<br>", unsafe_allow_html=True)
+    st.markdown("**Navigasi**")
+
+    st.button("📁  Unggah foto", use_container_width=True, key="nav_upload")
+    st.button("🎥  Webcam", use_container_width=True, key="nav_webcam")
+    st.button("📊  Riwayat", use_container_width=True, key="nav_history")
 
     st.markdown("<br><br>", unsafe_allow_html=True)
-
-    st.button("🖼️  Unggah foto", use_container_width=True, key="nav_upload", type="primary")
-    st.button("📷  Webcam", use_container_width=True, key="nav_webcam")
-    st.button("📶  Riwayat", use_container_width=True, key="nav_history")
-
-    st.markdown("<br><br><br><br><br><br><br>", unsafe_allow_html=True)
-    st.markdown("""
+    st.markdown(f"""
     <div class="spec-strip">
-        Detail model di footer, bukan di sidebar utama
+        Model EmotionCNNDeepFC · {device}<br>
+        Presisi {'FP16' if device.type == 'cuda' else 'FP32'} · FER2013
     </div>
     """, unsafe_allow_html=True)
+
+# ============================================================
+# PAGE HEADER
+# ============================================================
+
+st.markdown("""
+<p class="page-title">Deteksi stres dari wajah</p>
+<p class="page-sub">Unggah foto atau gunakan webcam untuk analisis langsung.</p>
+""", unsafe_allow_html=True)
+
+st.markdown("<br>", unsafe_allow_html=True)
 
 tab1, tab2 = st.tabs(["Unggah gambar", "Webcam"])
 
@@ -478,7 +447,7 @@ with tab1:
         with col2:
             tone = "danger" if is_stress else "calm"
             flag_text = "Terindikasi stres" if is_stress else "Cenderung tenang"
-            flag_icon = "⚠" if is_stress else "🍃"
+            flag_icon = "⚠️" if is_stress else "🍃"
 
             st.markdown(f"""
             <div class="bounded-card result-box {tone}">
@@ -487,7 +456,6 @@ with tab1:
                 <div class="result-bar-track">
                     <div class="result-bar-fill {tone}" style="width:{conf*100:.1f}%;"></div>
                 </div>
-                <div class="detail-btn">Lihat detail ↗</div>
             </div>
             """, unsafe_allow_html=True)
 
@@ -568,9 +536,23 @@ with tab2:
     """, unsafe_allow_html=True)
 
     webrtc_streamer(
-        key="stress",
+        key="stress-detection",
         video_processor_factory=VideoProcessor,
-        media_stream_constraints={"video": True, "audio": False}
+
+        rtc_configuration={
+            "iceServers": [
+                {
+                    "urls": ["stun:stun.l.google.com:19302"]
+                }
+            ]
+        },
+
+        media_stream_constraints={
+            "video": True,
+            "audio": False
+        },
+
+        async_processing=True
     )
 
 # ============================================================
@@ -580,15 +562,16 @@ with tab2:
 st.markdown("<br>", unsafe_allow_html=True)
 st.divider()
 
-m1, m2, m3 = st.columns(3)
+m1, m2, m3, m4 = st.columns(4)
 
 metrics = [
     ("Akurasi", "90%"),
+    ("ROC-AUC", "0.93"),
     ("Presisi", "FP16"),
-    ("Latency", "~40ms"),
+    ("Input", "48 × 48"),
 ]
 
-for col, (label, value) in zip([m1, m2, m3], metrics):
+for col, (label, value) in zip([m1, m2, m3, m4], metrics):
     with col:
         st.markdown(f"""
         <div class="metric-tile">
